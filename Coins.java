@@ -1,9 +1,10 @@
-/*
- * Write a program that gets a quantity of cents as a command-line argument.
- * The program prints how to represent this quantity using as many quarters as possible, plus the remainder in cents.
- */
 public class Coins {
-	public static void main(String[] args) {
-		// Put your code here
-	}
+    public static void main(String[] args) {
+        // recieves the total number of cents from user
+        int total = Integer.parseInt(args[0]); 
+        int quarters = total / 25; // calculates maximum number of quarter coins
+        int cents = total % 25; // calculates the remainder of the total by single cent coins
+        // prints representation of total cents using as many quarter coins as possible
+        System.out.println("Use " + quarters + " quarters and " + cents + " cents");
+    }
 }
