@@ -6,6 +6,6 @@ public class LinearEq {
         double c = Double.parseDouble(args[2]);
         double x = (c - b) / a; // computes the solution of the equation
         System.out.println(a + " * x + " + b + " = " + c); // prints equation
-        System.out.println("X = " + x); // prints computed value
+        System.out.println("x = " + x); // prints computed value
     }
 }
